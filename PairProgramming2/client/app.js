@@ -15,7 +15,16 @@
             .state('start', {
                 templateUrl: 'client/start/start.html',
                 controller: 'StartCtrl as vm'
-            });
+            })
+            .state('beccasucks', {
+                templateUrl: 'client/beccasucks/beccasucks.html',
+                controller: 'BeccasucksCtrl as vm'
+            })
+            .state('mattislame', {
+                templateUrl: 'client/mattislame/mattislame.html',
+                controller: 'MattislameCtrl as vm'
+            })
+        ;
 
         $urlRouterProvider.otherwise('start');
     }
