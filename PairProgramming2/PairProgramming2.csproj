@@ -122,9 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="api\DevelopersController.cs" />
     <Compile Include="api\CatController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -162,6 +162,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Developer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -169,9 +170,12 @@
     <Content Include="client\app.js" />
     <Content Include="client\beccasucks\beccasucks.html" />
     <Content Include="client\beccasucks\beccasucks.js" />
+    <Content Include="client\developers\developers.html" />
+    <Content Include="client\developers\developers.js" />
     <Content Include="client\mattislame\mattislame.html" />
     <Content Include="client\mattislame\mattislame.js" />
     <Content Include="client\services\catService.js" />
+    <Content Include="client\services\developerService.js" />
     <Content Include="client\start\start.html" />
     <Content Include="client\start\startCtrl.js" />
     <Content Include="Content\bootstrap.css" />

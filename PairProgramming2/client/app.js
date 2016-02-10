@@ -24,6 +24,10 @@
                 templateUrl: 'client/mattislame/mattislame.html',
                 controller: 'MattislameCtrl as vm'
             })
+            .state('developers', {
+                templateUrl: 'client/developers/developers.html',
+                controller: 'DevelopersCtrl as vm'
+            })
         ;
 
         $urlRouterProvider.otherwise('start');
