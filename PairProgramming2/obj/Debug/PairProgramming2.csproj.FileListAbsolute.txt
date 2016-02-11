@@ -43,3 +43,5 @@ C:\git\PairProgramming2\PairProgramming2\bin\System.Web.WebPages.Razor.xml
 C:\git\PairProgramming2\PairProgramming2\obj\Debug\PairProgramming2.csprojResolveAssemblyReference.cache
 C:\git\PairProgramming2\PairProgramming2\obj\Debug\PairProgramming2.dll
 C:\git\PairProgramming2\PairProgramming2\obj\Debug\PairProgramming2.pdb
+C:\git\PairProgramming2\PairProgramming2\bin\System.Web.Http.Tracing.dll
+C:\git\PairProgramming2\PairProgramming2\bin\System.Web.Http.Tracing.xml

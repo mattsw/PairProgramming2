@@ -14,11 +14,11 @@
         return service;
 
         function getAllDevelopers() {
-            return $http.get('api/developers/getalldevelopers');
+            return $http.get('api/developers');
         };
 
         function getBestDeveloper() {
-            return $http.get('api/developers/getbestdeveloper');
+            return $http.get('api/developers/3');
         };
     }
 })(window.angular)

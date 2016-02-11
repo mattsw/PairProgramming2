@@ -1,4 +1,9 @@
 ﻿<div>
     <h1>Developers</h1>
-    
+    We have {{ vm.devList.length }} developers on this glorious team of ours.
+    <ul>
+        <li ng-repeat="developer in vm.devList">
+            {{ developer.Name + " of level " + developer.SkillLevel.SkillLevelValue }}
+        </li>
+    </ul>
 </div>

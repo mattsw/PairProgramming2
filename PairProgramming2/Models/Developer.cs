@@ -1,21 +1,24 @@
 ﻿namespace PairProgramming2.Models
 {
-    public enum SkillLevel
-    {
-        Noob,
-        Average,
-        Pro,
-        BadAss
-    }
-
     public class Developer
     {
         public string Name;
-        public SkillLevel DevSkillLevel;
+        public DevSkillLevel SkillLevel;
 
         public Developer()
         {
             
+        }
+    }
+
+    public class DevSkillLevel
+    {
+        public int SkillLevel;
+        public string SkillLevelValue;
+
+        public DevSkillLevel()
+        {
+
         }
     }
 }
