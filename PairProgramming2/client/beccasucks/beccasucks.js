@@ -3,18 +3,15 @@
         module('pair').
         controller('BeccasucksCtrl', BeccasucksCtrl);
 
-    BeccasucksCtrl.$inject = ['$state', 'catService'];
+    BeccasucksCtrl.$inject = ['$state', 'cats'];
 
-    function BeccasucksCtrl($state, catService) {
+    function BeccasucksCtrl($state, cats) {
         var vm = this;
         vm.isBeccaFail = isBeccaFail;
         vm.navigate = navigate;
         vm.navDevs = navDevs;
-
-        catService.getCats().then(function(response) {
-            vm.catList = response.data;
-        });
-
+        vm.cats = cats.data.cats;
+ 
         function isBeccaFail() {
             return true;
         }

@@ -1,16 +1,20 @@
-﻿using System.Web.Http;
-
-namespace PairProgramming2.api
+﻿namespace PairProgramming2.api
 {
+    using System.Web.Http;
+    using PairProgramming2.Core.Repositories;
+
     public class CatController : ApiController
     {
+        private ICatRepository CatRepository;
+
+        public CatController(ICatRepository catRepository)
+        {
+            this.CatRepository = catRepository;
+        }
+
         public IHttpActionResult Get()
         {
-            return Ok(new[]
-            {
-                "brown",
-                "grey"
-            });
+            return Ok(CatRepository.GetCats());
         }
     }
 }

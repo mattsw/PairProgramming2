@@ -1,0 +1,32 @@
+﻿{
+  "cats": [
+    {
+      "name": "atheist",
+      "imagePath": "Content/images/cats/atheist.jpg"
+    },
+    {
+      "name": "catermelon",
+      "imagePath": "Content/images/cats/catermelon.jpg"
+    },
+    {
+      "name": "happy",
+      "imagePath": "Content/images/cats/happy.jpg"
+    },
+    {
+      "name": "lost",
+      "imagePath": "Content/images/cats/lost.jpg"
+    },
+    {
+      "name": "pizza",
+      "imagePath": "Content/images/cats/pizza.jpg"
+    },
+    {
+      "name": "religious",
+      "imagePath": "Content/images/cats/religious.jpg"
+    },
+    {
+      "name": "star",
+      "imagePath":  "Content/images/cats/star.jpg"
+    }
+  ]
+}

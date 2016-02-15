@@ -2,6 +2,14 @@
     <h1 ng-show="vm.isBeccaFail()">Of course, no joke</h1>
     <h5 ng-show="!vm.isBeccaFail()">Wat?</h5>
 
+    <label>Choose a cat: </label>
+    <select ng-model="vm.selectedCat" ng-options="cat as cat.name for cat in vm.cats">
+    </select>
+
+    <div>
+        <img ng-src="{{vm.selectedCat.imagePath}}" />
+    </div>
+
     <button ng-click="vm.navigate()">matt is lame</button>
 
     <button ng-click="vm.navDevs()">devs</button>
