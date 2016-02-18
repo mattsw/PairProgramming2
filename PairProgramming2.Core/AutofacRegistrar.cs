@@ -14,8 +14,10 @@
                         ConfigurationManager.AppSettings["catsPath"])))
                         .As<ICatRepository>().SingleInstance();
 
-            //IContainer container = builder.Build();
-            //DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+            builder.Register(taskRepository =>
+                new TaskRepository(HttpContext.Current.Server.MapPath(
+                    ConfigurationManager.AppSettings["tasksPath"]
+                    ))).As<ITaskRepository>().SingleInstance();
         }
     }
 }

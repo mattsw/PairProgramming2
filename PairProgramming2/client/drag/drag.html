@@ -1,0 +1,59 @@
+﻿<div class="drag" ng-init="vm.init()">
+    <div><button ng-click="vm.save()">Save</button></div>
+    <div class="list">
+        <label class="list-header">Open</label>
+        <ul dnd-list="vm.models.lists.open"
+            dnd-inserted="vm.updateTaskStatus(item, 'open')">
+            <li ng-repeat="item in vm.models.lists.open"
+                dnd-draggable="item"
+                dnd-moved="vm.models.lists.open.splice($index, 1)"
+                dnd-effect-allowed="move"
+                dnd-selected="vm.models.selected = item"
+                ng-class="{'selected': vm.models.selected === item}">
+             <task task="item"></task>
+            </li>
+        </ul>
+    </div>
+    <div class="list">
+        <label class="list-header">Progress</label>
+        <ul dnd-list="vm.models.lists.progress"
+            dnd-inserted="vm.updateTaskStatus(item, 'progress')">
+            <li ng-repeat="item in vm.models.lists.progress"
+                dnd-draggable="item"
+                dnd-moved="vm.models.lists.progress.splice($index, 1)"
+                dnd-effect-allowed="move"
+                dnd-selected="vm.models.selected = item"
+                ng-class="{'selected': vm.models.selected === item}">
+                <task task="item"></task>
+            </li>
+        </ul>
+    </div>
+    <div class="list">
+        <label class="list-header">Blocked</label>
+        <ul dnd-list="vm.models.lists.blocked"
+            dnd-inserted="vm.updateTaskStatus(item, 'blocked')">
+            <li ng-repeat="item in vm.models.lists.blocked"
+                dnd-draggable="item"
+                dnd-moved="vm.models.lists.blocked.splice($index, 1)"
+                dnd-effect-allowed="move"
+                dnd-selected="vm.models.selected = item"
+                ng-class="{'selected': vm.models.selected === item}">
+                <task task="item"></task>
+            </li>
+        </ul>
+    </div>
+    <div class="list">
+        <label class="list-header">Done</label>
+        <ul dnd-list="vm.models.lists.done"
+            dnd-inserted="vm.updateTaskStatus(item, 'done')">
+            <li ng-repeat="item in vm.models.lists.done"
+                dnd-draggable="item"
+                dnd-moved="vm.models.lists.done.splice($index, 1)"
+                dnd-effect-allowed="move"
+                dnd-selected="vm.models.selected = item"
+                ng-class="{'selected': vm.models.selected === item}">
+                <task task="item"></task>
+            </li>
+        </ul>
+    </div>
+</div>

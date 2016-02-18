@@ -14,7 +14,7 @@
 
         public CatRepository(string catsPath)
         {
-            Cats = JObject.Parse(File.ReadAllText(catsPath));
+            this.Cats = JObject.Parse(File.ReadAllText(catsPath));
         }
 
         public JToken GetCats()

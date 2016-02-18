@@ -152,6 +152,7 @@
   <ItemGroup>
     <Compile Include="api\DevelopersController.cs" />
     <Compile Include="api\CatController.cs" />
+    <Compile Include="api\TaskController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -195,17 +196,23 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="client\app.js" />
     <Content Include="client\beccasucks\beccasucks.html" />
-    <Content Include="client\beccasucks\beccasucks.js" />
+    <Content Include="client\beccasucks\beccaSucksCtrl.js" />
     <Content Include="client\developers\developers.html" />
-    <Content Include="client\developers\developers.js" />
+    <Content Include="client\developers\developersCtrl.js" />
+    <Content Include="client\directives\task.html" />
+    <Content Include="client\drag\drag.html" />
+    <Content Include="client\drag\dragCtrl.js" />
     <Content Include="client\mattislame\mattislame.html" />
-    <Content Include="client\mattislame\mattislame.js" />
+    <Content Include="client\mattislame\mattIsLameCtrl.js" />
     <Content Include="client\services\catService.js" />
     <Content Include="client\services\developersService.js" />
+    <Content Include="client\services\taskService.js" />
     <Content Include="client\start\start.html" />
     <Content Include="client\start\startCtrl.js" />
+    <Content Include="client\directives\task.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\drag.css" />
     <Content Include="Content\images\cats\atheist.jpg" />
     <Content Include="Content\images\cats\catermelon.jpg" />
     <Content Include="Content\images\cats\happy.jpg" />
@@ -264,6 +271,8 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Scripts\drag-n-drop\angular-drag-and-drop-lists.js" />
+    <Content Include="Scripts\drag-n-drop\angular-drag-and-drop-lists.min.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-touch.min.js.map" />
@@ -277,6 +286,7 @@
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="App_Data\cats.json" />
+    <Content Include="App_Data\tasks.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
@@ -1024,10 +1034,16 @@
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\lodash.core.js" />
+    <Content Include="Scripts\lodash.core.min.js" />
+    <Content Include="Scripts\lodash.js" />
+    <Content Include="Scripts\lodash.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

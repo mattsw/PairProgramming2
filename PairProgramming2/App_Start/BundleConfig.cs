@@ -22,7 +22,9 @@ namespace PairProgramming2
                 "~/Scripts/moment.js",
                 "~/Scripts/lodash.js",
                 "~/Scripts/dateValidationHelpers.js",
-                "~/Scripts/angular-ui/ui-utils.js"));
+                "~/Scripts/angular-ui/ui-utils.js",
+                "~/Scripts/drag-n-drop/angular-drag-and-drop-lists.js",
+                "~/Scripts/lodash.js"));
 
             bundles.Add(new ScriptBundle("~/js/app").IncludeDirectory(
                 "~/client/", "*.js", true));
@@ -38,7 +40,8 @@ namespace PairProgramming2
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/drag.css"));
         }
     }
 }
